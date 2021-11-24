@@ -1,0 +1,27 @@
+<!--<router-outlet></router-outlet>-->
+<div class="container mt-5">
+
+    <h2>Angular Display Data from Json File Example</h2>
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Approve</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let user of Users">
+            <td>{{ user.id }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.username }}</td>
+            <td>{{ user.email }}</td>
+            <td><button type="button">approve</button><button type="button">reject</button></td>
+
+        </tr>
+        </tbody>
+    </table>
+</div>
